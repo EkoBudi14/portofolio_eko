@@ -9,9 +9,13 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portofolio/controller/generalController.dart';
 import 'package:portofolio/resource/appClass.dart';
 import 'package:portofolio/view/about/about.dart';
+import 'package:portofolio/view/contact/contact.dart';
+import 'package:portofolio/view/experience/experience.dart';
 import 'package:portofolio/view/intro/intro.dart';
+import 'package:portofolio/view/widget/appbar.dart';
 import 'package:portofolio/view/widget/leftPane.dart';
 import 'package:portofolio/view/widget/rightPane.dart';
+import 'package:portofolio/view/work/work.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 
 class RootScreen extends ConsumerStatefulWidget {

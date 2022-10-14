@@ -1,16 +1,21 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portofolio/controller/generalController.dart';
-import 'package:portofolio/resource/appClass.dart';
-import 'package:portofolio/resource/colors.dart';
-import 'package:portofolio/resource/strings.dart';
 
-class AboutWeb extends StatelessWidget {
-  const AboutWeb({super.key});
+import '../../controller/generalController.dart';
+import '../../resource/appClass.dart';
+import '../../resource/colors.dart';
+import '../../resource/strings.dart';
 
+class AboutWeb extends ConsumerStatefulWidget {
+  const AboutWeb({Key? key}) : super(key: key);
+
+  @override
+  ConsumerState<AboutWeb> createState() => _AboutWebState();
+}
+
+class _AboutWebState extends ConsumerState<AboutWeb> {
   @override
   Widget build(BuildContext context) {
     return Container(
