@@ -13,56 +13,68 @@ class AppClass {
 
   /* URL */
   static final resumeDownloadURL =
-      '''https://jeeva-portfolio.s3.amazonaws.com/JEEVANANDHAM's+Resume.pdf''';
+      '''https://drive.google.com/drive/folders/1QUDhWOgSh9H-oUczvYljs27ys7sFhfqU?usp=sharing''';
 
-  static final gitSafeC19 = '''https://github.com/jeeva-HBK/SafeC19''';
+  static final gitSafeC19 = '''https://github.com/EkoBudi14/portofolio''';
+
+  static final gitFoodsApps = '''https://github.com/EkoBudi14/foodapps''';
 
   // static final gitHermarts = '''https://github.com/jeeva-HBK/SafeC19''';
-  static final gitWtIot = '''https://github.com/jeeva-HBK/AutoChem''';
+  static final gitWtIot = '''https://play.google.com/store/apps/details?id=kemenkes.mhealth.nakes''';
   static final gitAutoStabilizer =
-      '''https://github.com/jeeva-HBK/AutoStabilizer''';
-  static final gitPAT = '''https://github.com/jeeva-HBK/PAT''';
+      '''https://github.com/EkoBudi14/e-commerce-bwa-shamo''';
+  static final gitPAT = '''https://github.com/EkoBudi14/laravel-inventory''';
 
   // static final gitAVM = '''https://github.com/jeeva-HBK/SafeC19''';
 
   List<WorkModel> projectList = [
     WorkModel(
-        projectTitle: "SafeC19",
+        projectTitle: "FLUTIX AAP",
+        img: "assets/Movies.png",
         projectContent:
-            "It’s an Automatic Contactless Face Mask detection/Temperature detection/Hand Sanitizer app",
-        tech1: "Android",
-        tech2: "Google ML",
+            "this is a ticket booking application, the available features can choose a seat, top up, choose the language used, choose a place to watch and display tickets in the form of a barcode",
+        tech1: "Flutter",
+        tech2: "Firebase",
         tech3: "Java"),
     WorkModel(
-        projectTitle: "Hermarts",
-        projectContent: "E-Commerce Application for homemade Indian products",
-        tech1: "Android",
-        tech2: "RazorPay"),
-    WorkModel(
-        projectTitle: "WT-IoT",
+        projectTitle: "FOODMARKET APP",
+        img: '',
         projectContent:
-            '''It’s a water treatment process controller which can control all the sensors, calibration process, and staff management.''',
-        tech1: "Android",
-        tech2: "TCP",
-        tech3: "API"),
+            "this application is a food ordering application, it can be taken using the Laravel api and in the payment using midtrans",
+        tech1: "Flutter",
+        tech2: "API",
+        tech3: "Midtrans"),
     WorkModel(
-        projectTitle: "AutoStabilizer",
+      projectTitle: "MHEALTH-NAKES",
+      img: '',
+      projectContent:
+          '''This is a mobile application that functions to make it easier for puskesmas health workers to monitor public health by looking at 12 PISK indicators, knowing what health schedules are being implemented by the puskesmas. This application can also provide special notes to each community when conducting surveys conducted by health workers directly. The mHealth application also not only sees and monitors the public but can also get information such as news and health information tips directly from the ministry of health. This application has been uploaded to the playstore.''',
+      tech1: "Flutter",
+      tech2: "API",
+    ),
+    WorkModel(
+        projectTitle: "MHEALTH-BENEFICIER",
+        img: '',
         projectContent:
-            '''Client - SenseElec Remote controller mobile app for stabilizers and can be accessed locally(WiFi) and globally(MQTT).''',
-        tech1: "Android",
-        tech2: "MQTT"),
+            '''this is a mobile application which is a project from the ministry of health where this application is integrated with the PISPK system, this application is useful for monitoring individual health and family health. This application has features, namely notifications and firebase messages, reminders of the date of activities held by the puskesmas, and health information for each family.''',
+        tech1: "Flutter",
+        tech2: "API",
+        tech3: "Firebase"),
     WorkModel(
-        projectTitle: "PAT",
+        projectTitle: "SHAMO APP",
+        img: '',
         projectContent:
             '''PCB testing tool that helps QC/QA employees of rax-tech international, records the production flow and work strategy of every employee and automatically generates and stores some of the records as reports in the cloud.''',
         tech1: "Flutter",
-        tech2: "NodeJs"),
+        tech2: "API",
+        tech3: "Firebase"),
     WorkModel(
-        projectTitle: "AVM",
+        projectTitle: "WEB INVENTORY",
+        img: '',
         projectContent:
             '''It Acts as a display of a beverage vending machine that can perform several operations like Brewing, Dispensing, Cleaning drums, and several other operations.''',
-        tech1: "Android",
-        tech2: "Tablet"),
+        tech1: "PHP",
+        tech2: "LARAVEL"),
   ];
 
   factory AppClass() {
@@ -106,7 +118,8 @@ class AppClass {
                 content: Text(msg),
                 actions: [
                   ElevatedButton(
-                      style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
+                      style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.green),
                       onPressed: () => Navigator.pop(context),
                       child: Text('Okay'))
                 ]));

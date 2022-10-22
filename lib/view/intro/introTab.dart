@@ -81,15 +81,7 @@ class _IntroTabState extends State<IntroTab> {
                             fontSize: 16,
                           ),
                           children: <TextSpan>[
-                        TextSpan(
-                          text: Strings.currentOrgName,
-                          style: GoogleFonts.roboto(
-                            color: AppColors().neonColor,
-                            letterSpacing: 1,
-                            height: 1.5,
-                            fontSize: 16,
-                          ),
-                        )
+                        
                       ])),
                 ),
               ),

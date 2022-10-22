@@ -5,19 +5,18 @@ class Strings {
   static final whatIdo =
       '''I build things for the mobile/web.'''; // add . at the end
   static final introAbout =
-      '''I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at ''';
-  static final currentOrgName = '''NetAccess.'''; // add . at the end
+      '''I'm a software engineer who specializes in building (and sometimes designing) great digital experiences. Currently, I'm focusing on building a health mobile application called Mhealth. The application is a project from the ministry of health whose target is to use an application for Puskesmas''';
 
   /* About screen contents */
   static final aboutPara1 =
-      '''Hello! My name is Jeeva and I enjoy creating things that live on the internet. My interest in mobile/web development started back in 2019 when I decided to clone some applications — turns my passion into profession.''';
+      '''My name is Eko and I enjoy creating things that live on the internet. My interest in mobile/web development started back in 2019 when I decided to clone some applications — turns my passion into profession.''';
   static final aboutPara2 =
-      '''Fast-forward to today, and I’ve had the privilege of working for a good organization, a product-based, a huge corporation, and a student-led working atmosphere. My main focus these days is building accessible, inclusive products and digital experiences at Netaccess for a variety of clients.''';
+      '''''';
   static final aboutPara3 =
-      '''I also freelance for various clients across the world. If you've any ideas about creating a project or something, feel free to contact me!''';
+      '''I also freelance for various clients. If you have any ideas about creating a project or something, feel free to contact me!''';
 
   static final techIntro =
-      '''Here are a few technologies I’ve been working with recently:''';
+      '''Here are some of the technologies I've used:''';
   static final tech1 = ''' Flutter'''; // space for manual padding
   static final tech2 = ''' Dart'''; // space for manual padding
   static final tech3 = ''' Kotlin'''; // space for manual padding

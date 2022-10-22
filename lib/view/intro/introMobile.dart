@@ -79,16 +79,17 @@ class _IntroMobileState extends State<IntroMobile> {
                             height: 1.5,
                             fontSize: 15,
                           ),
+                          // ignore: prefer_const_literals_to_create_immutables
                           children: <TextSpan>[
-                        TextSpan(
-                          text: Strings.currentOrgName,
-                          style: GoogleFonts.roboto(
-                            color: AppColors().neonColor,
-                            letterSpacing: 1,
-                            height: 1.5,
-                            fontSize: 15,
-                          ),
-                        )
+                        // TextSpan(
+                        //   text: Strings.currentOrgName,
+                        //   style: GoogleFonts.roboto(
+                        //     color: AppColors().neonColor,
+                        //     letterSpacing: 1,
+                        //     height: 1.5,
+                        //     fontSize: 15,
+                        //   ),
+                        // )
                       ])),
                 ),
               ),

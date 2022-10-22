@@ -103,8 +103,7 @@ class _WorkWebState extends ConsumerState<WorkWeb> {
             break;
 
           case 1:
-            AppClass().alertDialog(context, 'Not Found',
-                'Sorry the project you requested not found in the repository');
+            await launchUrl(Uri.parse(AppClass.gitFoodsApps));
             break;
 
           case 2:

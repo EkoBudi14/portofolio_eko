@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -211,14 +213,16 @@ class _AboutWebState extends ConsumerState<AboutWeb> {
                                     borderRadius:
                                         BorderRadius.all(Radius.circular(5.0)),
                                     image: DecorationImage(
-                                        fit: BoxFit.cover,
-                                        colorFilter: ColorFilter.mode(
-                                            AppColors().primaryColor,
-                                            isHovered
-                                                ? BlendMode.lighten
-                                                : BlendMode.color),
-                                        image: AssetImage(
-                                            'assets/svg/profilePic.jpg')),
+                                      fit: BoxFit.cover,
+                                      colorFilter: ColorFilter.mode(
+                                          AppColors().primaryColor,
+                                          isHovered
+                                              ? BlendMode.lighten
+                                              : BlendMode.color),
+                                      image: AssetImage(
+                                        'assets/svg/eko_Budiarto_fix.jpg',
+                                      ),
+                                    ),
                                     color: Colors.transparent),
                               ),
                             ),
