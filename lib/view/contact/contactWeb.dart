@@ -4,7 +4,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portofolio/resource/appClass.dart';
-
 import '../../resource/colors.dart';
 import '../../resource/strings.dart';
 
@@ -36,7 +35,7 @@ class _ContactWebState extends State<ContactWeb> {
                         fontFamily: 'sfmono'),
                   ),
                   Text(
-                    '''My Contact''',
+                    ''' What's next?''',
                     style: TextStyle(
                         color: AppColors().neonColor,
                         fontSize: 18,
@@ -44,27 +43,110 @@ class _ContactWebState extends State<ContactWeb> {
                   ),
                 ],
               ),
-              Container(
-                child: Row(
-                  children: [
-                    // ignore: prefer_const_constructors
-                    Text(
-                      '''My Contact''',
-                      style: TextStyle(
-                          color: AppColors().neonColor,
-                          fontSize: 18,
-                          fontFamily: 'sfmono'),
-                    ),
-                    Text(
-                      '''My Contact''',
-                      style: TextStyle(
-                          color: AppColors().neonColor,
-                          fontSize: 18,
-                          fontFamily: 'sfmono'),
-                    ),
-                  ],
+              Padding(
+                padding: const EdgeInsets.only(top: 8.0),
+                child: Text(
+                  'Message Me',
+                  style: GoogleFonts.robotoSlab(
+                    color: AppColors().textColor,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 3,
+                    fontSize: 55,
+                  ),
                 ),
               ),
+              Padding(
+                padding: const EdgeInsets.only(top: 15.0),
+                child: Container(
+                  width: AppClass().getMqWidth(context) * 0.45,
+                  child: Text(
+                    Strings.endTxt,
+                    textAlign: TextAlign.center,
+                    style: GoogleFonts.roboto(
+                      color: AppColors().textLight,
+                      letterSpacing: 1,
+                      height: 1.5,
+                      fontSize: 18,
+                    ),
+                  ),
+                ),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Padding(
+                    padding: EdgeInsets.only(top: 50, bottom: 70),
+                    child: InkWell(
+                      onTap: () {},
+                      child: Container(
+                        height: AppClass().getMqHeight(context) * 0.09,
+                        width: AppClass().getMqWidth(context) * 0.15,
+                        decoration: BoxDecoration(
+                            color: Colors.transparent,
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(3.0)),
+                            border: Border.all(
+                                color: AppColors().neonColor, width: 1.5)),
+                        child: Center(
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(Icons.email_outlined, color: AppColors().neonColor),
+                              SizedBox(
+                                width: 10,
+                              ),
+                              Text('Via Email',
+                                  style: TextStyle(
+                                      color: AppColors().neonColor,
+                                      fontSize: 13,
+                                      letterSpacing: 1,
+                                      fontWeight: FontWeight.bold,
+                                      fontFamily: 'sfmono')),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 30,
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(top: 50, bottom: 70,),
+                    child: InkWell(
+                      onTap: () {},
+                      child: Container(
+                        height: AppClass().getMqHeight(context) * 0.09,
+                        width: AppClass().getMqWidth(context) * 0.15,
+                        decoration: BoxDecoration(
+                            color: Colors.transparent,
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(3.0)),
+                            border: Border.all(
+                                color: AppColors().neonColor, width: 1.5)),
+                        child: Center(
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(Icons.contact_page, color: AppColors().neonColor),
+                              SizedBox(
+                                width: 10,
+                              ),
+                              Text('whatsapp',
+                                  style: TextStyle(
+                                      color: AppColors().neonColor,
+                                      fontSize: 13,
+                                      letterSpacing: 1,
+                                      fontWeight: FontWeight.bold,
+                                      fontFamily: 'sfmono')),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              )
             ],
           ),
           Column(

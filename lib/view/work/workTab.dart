@@ -168,7 +168,7 @@ class _WorkWebState extends ConsumerState<WorkTab> {
                                   : Colors.white,
                               letterSpacing: 1,
                               fontWeight: FontWeight.bold,
-                              fontSize: 20),
+                              fontSize: 15),
                         ),
                       ],
                     ),

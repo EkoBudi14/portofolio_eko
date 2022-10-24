@@ -111,16 +111,18 @@ class _WorkWebState extends ConsumerState<WorkWeb> {
             break;
 
           case 3:
-            await launchUrl(Uri.parse(AppClass.gitAutoStabilizer));
+            AppClass().alertDialog(context, 'Not Found',
+                'Sorry This project is only viewable by developers');
             break;
 
           case 4:
-            await launchUrl(Uri.parse(AppClass.gitPAT));
+            await launchUrl(Uri.parse(AppClass.gitAutoStabilizer));
+
             break;
 
           case 5:
-            AppClass().alertDialog(context, 'Not Found',
-                'Sorry the project you requested not found in the repository');
+            await launchUrl(Uri.parse(AppClass.gitPAT));
+
             break;
         }
       },

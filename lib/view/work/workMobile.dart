@@ -164,7 +164,7 @@ class _WorkWebState extends ConsumerState<WorkMobile> {
                                   : Colors.white,
                               letterSpacing: 1,
                               fontWeight: FontWeight.bold,
-                              fontSize: 18),
+                              fontSize: 15),
                         ),
                       ],
                     ),

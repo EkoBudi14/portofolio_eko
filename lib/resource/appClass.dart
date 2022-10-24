@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:portofolio/resource/styles.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -20,7 +22,8 @@ class AppClass {
   static final gitFoodsApps = '''https://github.com/EkoBudi14/foodapps''';
 
   // static final gitHermarts = '''https://github.com/jeeva-HBK/SafeC19''';
-  static final gitWtIot = '''https://play.google.com/store/apps/details?id=kemenkes.mhealth.nakes''';
+  static final gitWtIot =
+      '''https://play.google.com/store/apps/details?id=kemenkes.mhealth.nakes''';
   static final gitAutoStabilizer =
       '''https://github.com/EkoBudi14/e-commerce-bwa-shamo''';
   static final gitPAT = '''https://github.com/EkoBudi14/laravel-inventory''';
@@ -108,6 +111,16 @@ class AppClass {
 
   downloadResume(context) async {
     await launchUrl(Uri.parse(AppClass.resumeDownloadURL));
+  }
+
+  String url() {
+    if (Platform.isAndroid) {
+      // add the [https]
+      return "https://wa.me/081908342094/?text=HellooEkoo"; // new line
+    } else {
+      // add the [https]
+      return "https://api.whatsapp.com/send?phone=081908342094=${Uri.parse("Hello EKo")}"; // new line
+    }
   }
 
   alertDialog(context, title, msg) {

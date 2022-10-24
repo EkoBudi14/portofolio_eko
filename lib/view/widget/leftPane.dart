@@ -32,86 +32,89 @@ class _LeftPaneState extends ConsumerState<LeftPane> {
                         mainAxisAlignment: MainAxisAlignment.end,
                         // ignore: prefer_const_literals_to_create_immutables
                         children: [
-                          // Container(
-                          //   height: AppClass().getMqHeight(context) * 0.07,
-                          //   child: InkWell(
-                          //     onTap: () async {
-                          //       await launchUrl(
-                          //           Uri.parse("https://github.com/jeeva-HBK"));
-                          //     },
-                          //     onHover: (bol) {
-                          //       if (bol) {
-                          //         ref.read(hoverProvider.notifier).state =
-                          //             "git";
-                          //       } else {
-                          //         ref.read(hoverProvider.notifier).state = "";
-                          //       }
-                          //     },
-                          //     child: Container(
-                          //       margin: EdgeInsets.only(
-                          //           bottom: val == "git" ? 5.0 : 0),
-                          //       padding: const EdgeInsets.only(bottom: 8.0),
-                          //       child: SvgPicture.asset('assets/svg/github.svg',
-                          //           color: val == "git"
-                          //               ? AppColors().neonColor
-                          //               : AppColors().textColor,
-                          //           width: 22),
-                          //     ),
-                          //   ),
-                          // ),
-                          // Container(
-                          //   height: AppClass().getMqHeight(context) * 0.07,
-                          //   child: InkWell(
-                          //     onTap: () {},
-                          //     onHover: (bol) {
-                          //       if (bol) {
-                          //         ref.read(hoverProvider.notifier).state =
-                          //             "insta";
-                          //       } else {
-                          //         ref.read(hoverProvider.notifier).state = "";
-                          //       }
-                          //     },
-                          //     child: Container(
-                          //       margin: EdgeInsets.only(
-                          //           bottom: val == "insta" ? 5.0 : 0),
-                          //       padding: const EdgeInsets.only(bottom: 8.0),
-                          //       child: SvgPicture.asset(
-                          //           'assets/blogger.png',
-                          //           color: val == "Blog"
-                          //               ? Colors.white
-                          //               : Colors.yellow,
-                          //           width: 22, height: 22,),
-                          //     ),
-                          //   ),
-                          // ),
-                          // Container(
-                          //   height: AppClass().getMqHeight(context) * 0.07,
-                          //   child: InkWell(
-                          //     onTap: () async {
-                          //       await launchUrl(Uri.parse(
-                          //           "https://www.linkedin.com/in/jeeva-hbk/"));
-                          //     },
-                          //     onHover: (bol) {
-                          //       if (bol) {
-                          //         ref.read(hoverProvider.notifier).state =
-                          //             "linkedIn";
-                          //       } else {
-                          //         ref.read(hoverProvider.notifier).state = "";
-                          //       }
-                          //     },
-                          //     child: Container(
-                          //       margin: EdgeInsets.only(
-                          //           bottom: val == "linkedIn" ? 5.0 : 0),
-                          //       padding: const EdgeInsets.only(bottom: 8.0),
-                          //       child: SvgPicture.asset(
-                          //           'assets/svg/linkedIn.svg',
-                          //           color: val == "linkedIn"
-                          //               ? AppColors().neonColor
-                          //               : AppColors().textColor,
-                          //           width: 22),
-                          //     ),
-                          //   ),
-                          // ),
+                          Container(
+                            height: AppClass().getMqHeight(context) * 0.07,
+                            child: InkWell(
+                              onTap: () async {
+                                await launchUrl(
+                                    Uri.parse("https://github.com/EkoBudi14"));
+                              },
+                              onHover: (bol) {
+                                if (bol) {
+                                  ref.read(hoverProvider.notifier).state =
+                                      "git";
+                                } else {
+                                  ref.read(hoverProvider.notifier).state = "";
+                                }
+                              },
+                              child: Container(
+                                margin: EdgeInsets.only(
+                                    bottom: val == "git" ? 5.0 : 0),
+                                padding: const EdgeInsets.only(bottom: 8.0),
+                                child: SvgPicture.asset('assets/svg/github.svg',
+                                    color: val == "git"
+                                        ? AppColors().neonColor
+                                        : AppColors().textColor,
+                                    width: 22),
+                              ),
+                            ),
+                          ),
+                          Container(
+                            height: AppClass().getMqHeight(context) * 0.07,
+                            child: InkWell(
+                              onTap: () async {
+                                await launchUrl(Uri.parse(
+                                    "http://ekobudiarto14.blogspot.com/"));
+                              },
+                              onHover: (bol) {
+                                if (bol) {
+                                  ref.read(hoverProvider.notifier).state =
+                                      "insta";
+                                } else {
+                                  ref.read(hoverProvider.notifier).state = "";
+                                }
+                              },
+                              child: Container(
+                                margin: EdgeInsets.only(
+                                    bottom: val == "blog" ? 5.0 : 0),
+                                padding: const EdgeInsets.only(bottom: 8.0),
+                                child: Image.asset(
+                                    'assets/blogger.png',
+                                    color: val == "Blog"
+                                         ? AppColors().neonColor  
+                                        : Colors.white,
+                                    width: 22, height: 22,),
+                              ),
+                            ),
+                          ),
+                          Container(
+                            height: AppClass().getMqHeight(context) * 0.07,
+                            child: InkWell(
+                              onTap: () async {
+                                await launchUrl(Uri.parse(
+                                    "https://www.linkedin.com/in/eko-budiarto-00/"));
+                              },
+                              onHover: (bol) {
+                                if (bol) {
+                                  ref.read(hoverProvider.notifier).state =
+                                      "linkedIn";
+                                } else {
+                                  ref.read(hoverProvider.notifier).state = "";
+                                }
+                              },
+                              child: Container(
+                                margin: EdgeInsets.only(
+                                    bottom: val == "linkedIn" ? 5.0 : 0),
+                                padding: const EdgeInsets.only(bottom: 8.0),
+                                child: SvgPicture.asset(
+                                    'assets/svg/linkedIn.svg',
+                                    color: val == "linkedIn"
+                                        ? AppColors().neonColor
+                                        : AppColors().textColor,
+                                    width: 22),
+                              ),
+                            ),
+                          ),
                           // Container(
                           //   height: AppClass().getMqHeight(context) * 0.07,
                           //   child: InkWell(
