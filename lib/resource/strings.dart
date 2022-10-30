@@ -27,11 +27,11 @@ class Strings {
   static final expDesig1 = '''Android Developer''';
   static final expDur1 = '''Nov 2019 - Mar 2020''';
   static final expAbout1 =
-      '''sample test about the work statuary and atmosphere, qerjqwjqwiojeqwjeq ''';
+      '''Updated the user interface of the mhealth health workers and mhealth beneficiary applications ''';
   static final expAbout1_2 =
-      '''sample test about the work statuary and atmosphere. asdhasjdhajhdajasbdjbasjkdasjkbldjkabsdjkablsdasdas''';
+      '''upload mhealth nakes and mhealth beneficier to playstore''';
   static final expAbout1_3 =
-      '''sample test about the work statuary and atmosphere, ''';
+      '''presentations related to applications that have been made, feature updates and maintenance ''';
 
   static final expCompName2 = '''Rax-Tech''';
   static final expDesig2 = '''Mobile App Developer''';
@@ -43,9 +43,9 @@ class Strings {
   static final expAbout2_3 =
       '''sample test about the work statuary and atmosphere, ''';
 
-  static final expCompName3 = '''Netaccess''';
-  static final expDesig3 = '''Software Engineer''';
-  static final expDur3 = '''Jun 2022 - Present''';
+  static final expCompName3 = '''''';
+  static final expDesig3 = '''Mobile Developer''';
+  static final expDur3 = '''Sept 2021 - Present''';
   static final expAbout3 =
       '''sample test about the work statuary and atmosphere, qerjqwjqwiojeqwjeq ''';
   static final expAbout3_2 =

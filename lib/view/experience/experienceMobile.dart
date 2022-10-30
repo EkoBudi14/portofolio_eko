@@ -348,7 +348,7 @@ class ExperienceMobile extends StatelessWidget {
                                             : Colors.white,
                                         width: 2))),
                             child: Text(
-                              'Netaccess',
+                              'Kementrian Kesehatan RI',
                               style: TextStyle(
                                   color: data == 0
                                       ? AppColors().neonColor

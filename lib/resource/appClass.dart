@@ -86,6 +86,8 @@ class AppClass {
 
   AppClass._internal();
 
+
+  
   getMqWidth(BuildContext context) {
     return MediaQuery.of(context).size.width;
   }
@@ -113,13 +115,13 @@ class AppClass {
     await launchUrl(Uri.parse(AppClass.resumeDownloadURL));
   }
 
-  String url() {
+  url() async {
     if (Platform.isAndroid) {
       // add the [https]
-      return "https://wa.me/081908342094/?text=HellooEkoo"; // new line
+      return launchUrl(Uri.parse("https://wa.me/6281908342094/?text=HellooEkoo")); // new line
     } else {
       // add the [https]
-      return "https://api.whatsapp.com/send?phone=081908342094=${Uri.parse("Hello EKo")}"; // new line
+      return launchUrl(Uri.parse("https://api.whatsapp.com/send?phone=6281908342094")); // new line
     }
   }
 
